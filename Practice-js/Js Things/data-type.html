@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data type</title>
+</head>
+<body>
+    
+    <div id="myData" data-name="Nilam" data-started-coding-at="23">
+        <ul>
+            <li><a href="https://google.com" tabindex="4" accesskey="h">Home</a></li>
+            <li><a href="#" tabindex="2" translate="no">Videos</a></li>
+            <li><a href="#" tabindex="5" accesskey="A">About us</a></li>
+            <li><a href="#" tabindex="3">Images</a></li>
+            <li><a href="#" tabindex="1">Movie</a></li>
+        </ul>
+
+    </div>
+
+    <script>
+        const myDiv = document.getElementById('myData');
+
+        myDiv.dataset.name = "krishna"; 
+        myDiv.dataset.startedCodingAt = "34"
+
+        myDiv.dataset.name = ""; 
+        myDiv.removeAttribute('data-name');
+
+        console.log(myDiv.dataset);
+
+    </script>
+
+</body>
+</html>

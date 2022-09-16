@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="table-container">
+        <table class="table">
+            <thead>
+
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script>
+        async function loadIntoTable(url, table){
+            const tableHead = table.querySelector('thead');
+           const tableBody = table.querySelector('tbody');
+           
+            const response = await fetch(url);
+
+            const {headers, rows} = await response.json();
+
+            tableHead.innerHTML = "<tr></tr>"
+            tableBody.innerHTML = "";
+
+            for(const headerTxt of headers){
+                const headerElement = document.createElement('th');
+
+                headerElement.textContent = headerTxt;
+
+                tableHead.querySelector("tr").appendChild(headerElement);
+            }
+
+
+            for(const row of rows){
+                const bodyElement = document.createElement('tr');
+
+                for(const cellText of row){
+                     const cellElement = document.createElement('td');
+
+                    cellElement.textContent = cellText;
+                    bodyElement.appendChild(cellElement);
+
+                }
+
+                tableBody.appendChild(bodyElement);
+            }
+
+        }
+
+        loadIntoTable("./data.json", document.querySelector('table'));
+    </script>
+</body>
+</html>
