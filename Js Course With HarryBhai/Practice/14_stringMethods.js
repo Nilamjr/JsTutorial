@@ -3,6 +3,8 @@
 let myName = "Nilam";
 let friend = "Khushal";
 
+
+console.log(myName + friend);
 // Properties and Methods 
 
 // console.log(myName.length);
@@ -17,4 +19,13 @@ let friend = "Khushal";
 // console.log(newFriend);
 // console.log(newFriend.trim());
 
-// let fri = 
+let fri = "Nutan";
+
+console.log(fri[0]);
+console.log(fri[1]);
+
+for(let i = 0; i < fri.length; i++){
+    // console.log(fri[i]);
+}
+fri[4] = "M" //this is not possible
+console.log(fri); //string always stay same but give new string when we apply methods or properties on it
