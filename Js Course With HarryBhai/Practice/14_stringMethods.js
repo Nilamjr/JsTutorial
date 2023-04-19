@@ -23,6 +23,8 @@ let fri = "Nutan";
 
 console.log(fri[0]);
 console.log(fri[1]);
+fri[5] = "U"; //this is not possible with the string but we can do this on Arrays
+console.log("Checking whether its changing the string or not",fri);
 
 for(let i = 0; i < fri.length; i++){
     // console.log(fri[i]);
