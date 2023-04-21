@@ -20,7 +20,7 @@ let arrayJoin = num.join("-");
 // console.log(num);
 // console.log(arrayShift, typeof arrayShift);
 let arrayUnShift = num.unshift(8); //it returns the new array length
-console.log(num);
-console.log(arrayUnShift, typeof arrayUnShift);
+// console.log(num);
+// console.log(arrayUnShift, typeof arrayUnShift);
 
 
