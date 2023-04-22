@@ -57,8 +57,8 @@ n1 = Number.parseInt(n1);
 for(var i = 0; i < n1; i++){
     factorial = factorial * (i+1);
 }
-console.log("Its a Factorial",factorial);
-console.log("its i",i)
+// console.log("Its a Factorial",factorial);
+// console.log("its i",i)
 // 1*2 = 2
 // 2*3 = 6
 // 6*4 = 24
@@ -90,6 +90,6 @@ for(let a in obj){
     // console.log("the Marks of " + a + " is " +  obj[a]);
 }
 
-for(let b of "harry"){
+for(let b of obj){
     // console.log(b);
 }

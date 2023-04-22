@@ -1,6 +1,6 @@
 let numArray1 = [1,2,3,4,5,6,7,8,9];
-delete numArray1[0];  // length will not affetct by deleteing aby delete
-// console.log(numArray1);
+delete numArray1[0];  // length will not affetct by deleteing by delete
+// console.log("After Delete", numArray1);
 // console.log(numArray1.length);
 
 let numArray2 = [11,12,13,14,15,16];
@@ -28,13 +28,14 @@ sortArr.reverse();
 
 let spliceArr = [763, 5, 2, 66, 23, 5, 255, 2357, 878, 4343, 67, 24]
 // spliceArr.splice(3, 3, 1000, 2000 ,3000, 4000);
-// console.log(spliceArr);
 let spliceReturnValue = spliceArr.splice(3, 3, 1000, 2000 ,3000, 4000);
+// console.log(spliceArr);
+// console.log("Array of return value",  spliceReturnValue);
 // console.log("Array of return value",typeof  spliceReturnValue);
 
 let sliceArr = [12,455,23,11,5 ,6, 2, 6, 23,66,6, 8, 565];
-sliceArr.slice(4);
-console.log(sliceArr);
+// sliceArr.slice(4);
+// console.log(sliceArr);
 
 // let newSlice = sliceArr.slice(4);
 let newSlice = sliceArr.slice(4, 8);

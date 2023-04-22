@@ -3,7 +3,7 @@ let n = 5;
 let i = 0;
 
 while(i<n){
-    // console.log(i);
+    console.log(i);
     i++;
 }
 
@@ -12,6 +12,6 @@ let n1 = 2;
 let index = 10;
 
 do{
-    console.log(index);
+    // console.log(index);
     index++;
 }while(index<n);
